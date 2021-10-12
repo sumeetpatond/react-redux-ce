@@ -11,13 +11,13 @@ const Counter1 = function ({ numberOfCakes, buyCake }) {
   );
 };
 
-const mapStateToProps = function (state) {
+const mapStateToProps = function (state, ownProps) {
   return {
     numberOfCakes: state.cake.numberOfCakes,
   };
 };
 
-const mapDispatchToProps = function (dispatch) {
+const mapDispatchToProps = function (dispatch, ownProps) {
   return {
     buyCake: () => dispatch(buyCake()),
   };

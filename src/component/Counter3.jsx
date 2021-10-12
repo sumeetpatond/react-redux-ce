@@ -10,7 +10,7 @@ const Counter3 = function () {
   return (
     <div>
       <h3>Icecreams Available: {numberOfIcecreams}</h3>
-      <button onClick={() => dispatch(buyIcecream())}>Buy one</button>
+      <button onClick={() => dispatch(buyIcecream(1))}>Buy one</button>
     </div>
   );
 };
