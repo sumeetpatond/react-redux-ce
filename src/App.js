@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import store from "./redux/Store";
 import Counter2 from "./component/Counter2";
 import Counter3 from "./component/Counter3";
+import Counter4 from "./component/Counter4";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Counter1 />
         <Counter2 />
         <Counter3 />
+        <Counter4 />
       </Provider>
     </div>
   );
