@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useSelector, useDispatch } from "react-redux";
-import { buyCake } from "../redux/CakeActions";
+import { buyCake } from "../redux/cake/CakeActions";
 
 const Counter2 = function () {
-  const numberOfCakes = useSelector((state) => state.numberOfCakes);
+  const numberOfCakes = useSelector((state) => state.cake.numberOfCakes);
   const dispatch = useDispatch();
   return (
     <div>

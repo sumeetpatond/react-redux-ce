@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { connect } from "react-redux";
-import { buyCake } from "../redux/CakeActions";
+import { buyCake } from "../redux/cake/CakeActions";
 
 const Counter1 = function ({ numberOfCakes, buyCake }) {
   return (
@@ -13,7 +13,7 @@ const Counter1 = function ({ numberOfCakes, buyCake }) {
 
 const mapStateToProps = function (state) {
   return {
-    numberOfCakes: state.numberOfCakes,
+    numberOfCakes: state.cake.numberOfCakes,
   };
 };
 
